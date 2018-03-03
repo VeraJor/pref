@@ -1,0 +1,18 @@
+Options +FollowSymLinks
+#Options +SymLinksIfOwnerMatch
+
+# REWRITE ___________________
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteRule ^.htaccess$ - [F]
+    RewriteRule ^$ index.php [QSA,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f 
+    #RewriteCond %{REQUEST_URI} ^(/welcome|/kartinka|/cabinet|/drive|/ajax|/help|/fileupload|/adm)
+    RewriteRule ^(.*)$ index.php/$1 [QSA,L]
+
+</IfModule>

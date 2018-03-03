@@ -1,0 +1,53 @@
+#leftInfo,
+.prikup,
+#rightInfo,
+.leftCard,.rightCard,
+#iInfo,.iCard,
+#iCommands{
+    position: absolute!important;
+}
+
+#leftInfo .nickname,   #rightInfo .nickname,   #iInfo .nickname{
+    font-weight: bold!important;
+    text-shadow: 0 0 3px white;
+}
+
+#leftInfo{
+    top: 7px;
+    left: 7px;
+}
+
+.prikup{
+    top: 50px;
+    left: 40%;
+    right: 0;
+}
+
+#rightInfo{
+    top: 7px;
+    right: 7px;
+}
+
+.leftCard{
+    top: 50px;
+    left: 0;
+}
+
+.rightCard{
+    top: 50px;
+    right: 0;
+}
+
+#iInfo{
+    left: 7px;
+    bottom: 100px;
+}
+
+.iCard{
+    bottom: 0;
+    left: 0;
+}
+
+#iCommands{
+    bottom: 0;
+}

@@ -1,0 +1,19 @@
+html, body{
+    background: url("/images/greencloth2.jpg");
+}
+
+h1{
+    /*    background-color: transparent; */
+}
+
+/** + 2 color to jGROWL*/
+div.jGrowl div.jGrowl-notification.black {
+    background-color: 		#000;
+    border-color:           #000;
+    color:                  #ccc;
+}
+div.jGrowl div.jGrowl-notification.yellow {
+    background-color: 		#ee4;
+    border-color:           #ccc;
+    color:                  #000;
+}
