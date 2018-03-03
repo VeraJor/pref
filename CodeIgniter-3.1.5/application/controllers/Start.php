@@ -8,10 +8,10 @@ class Start extends MY_Controller {
 
         if (!$this->input->is_ajax_request())
             die('Bad ajax_request status');
-        //////////  ЭТО AJAX !!!  ///////////
         elseif (empty($this->user))
             return $this->showLoginForm();
         /////  ЕСТЬ АВТОРИЗАЦИЯ !!! //////
+        // remove this! string
 
         // Скрыть приветствие
         // Показать приложение
