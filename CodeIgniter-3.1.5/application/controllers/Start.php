@@ -11,7 +11,6 @@ class Start extends MY_Controller {
         elseif (empty($this->user))
             return $this->showLoginForm();
         /////  ЕСТЬ АВТОРИЗАЦИЯ !!! //////
-        // remove this! string
 
         // Скрыть приветствие
         // Показать приложение
